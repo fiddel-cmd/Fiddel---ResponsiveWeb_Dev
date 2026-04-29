@@ -44,3 +44,25 @@ body {
   border-radius: 20px;
   padding: 20px;
 }
+.card{
+    width : 220p;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+
+}
+.img{
+    width: 100%;
+    object-fit: cover;
+
+}
+    
+.card a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  background: #dff0df;
+  color: black;
+  font-weight: bold;
+}
