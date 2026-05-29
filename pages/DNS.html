@@ -1,40 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>DNS - Domain Name System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<h1>Domain Name System (DNS)</h1>
+    # Domain Name System (DNS)
 
-	<h2>Introduction</h2>
-	<p>The Domain Name System (DNS) translates human-friendly domain names (like example.com) into IP addresses that computers use to identify each other on the network. DNS is a foundational internet service that makes the web easy to use.</p>
+## Introduction
 
-	<h2>How DNS Works</h2>
-	<p>When you enter a URL in a browser, the system queries a DNS resolver which looks up the domain's authoritative name server and returns the corresponding IP address. The browser then connects to that IP address to request the web page.</p>
+The Domain Name System (DNS) is a networking system that translates human-readable domain names into IP addresses that computers use to identify each other on a network.
 
-	<h3>Key DNS components</h3>
-	<ul>
-		<li>Recursive resolver (usually provided by ISP or public DNS)</li>
-		<li>Root name servers</li>
-		<li>TLD (Top-Level Domain) name servers</li>
-		<li>Authoritative name servers (for the domain)</li>
-	</ul>
+People find it easier to remember website names such as “google.com” instead of numerical IP addresses like “142.250.190.14”. DNS makes internet navigation easier by automatically converting domain names into their corresponding IP addresses.
 
-	<h2>Common DNS Record Types</h2>
-	<ul>
-		<li><strong>A</strong>: maps a hostname to an IPv4 address</li>
-		<li><strong>AAAA</strong>: maps a hostname to an IPv6 address</li>
-		<li><strong>CNAME</strong>: alias of one name to another</li>
-		<li><strong>MX</strong>: mail exchange records for email routing</li>
-		<li><strong>TXT</strong>: arbitrary text (often used for verification)</li>
-	</ul>
+DNS is often referred to as the “phonebook of the internet.”
 
-	<h2>Importance and Best Practices</h2>
-	<p>Reliable DNS is essential for uptime and performance. Use reputable DNS providers, configure TTLs appropriately, and secure DNS with DNSSEC where possible to prevent spoofing.</p>
+---
 
-	<h2>Conclusion</h2>
-	<p>DNS quietly makes the web usable. Understanding DNS basics helps when troubleshooting connectivity, setting up services, or improving reliability.</p>
+# How DNS Works
+
+DNS works through a process called DNS resolution.
+
+## Steps in DNS Resolution
+
+1. A user enters a website name into a web browser.
+2. The browser sends a DNS query to a DNS server.
+3. The DNS server searches for the matching IP address.
+4. The correct IP address is returned to the browser.
+5. The browser connects to the web server using the IP address.
+6. The requested webpage is displayed to the user.
+
+This process occurs within milliseconds.
+
+---
+
+# Components of DNS
+
+DNS consists of several important components that work together.
+
+## 1. Domain Name
+
+A domain name is the human-readable address of a website.
+
+### Examples
+
+* google.com
+* facebook.com
+* openai.com
+
+---
+
+## 2. IP Address
+
+An IP address is the numerical identifier assigned to devices on a network.
+
+### Example
+
+192.168.1.1
+
+---
+
+## 3. DNS Server
+
+A DNS server stores DNS records and responds to DNS queries.
+
+### Types of DNS Servers
+
+* Recursive Resolver
+* Root Name Server
+* Top-Level Domain (TLD) Server
+* Authoritative Name Server
+
+---
+
+# Types of DNS Records
+
+DNS records store information about domain names and their associated services.
+
+## Common DNS Records
+
+| DNS Record   | Purpose                               |
+| ------------ | ------------------------------------- |
+| A Record     | Maps domain name to IPv4 address      |
+| AAAA Record  | Maps domain name to IPv6 address      |
+| CNAME Record | Alias for another domain              |
+| MX Record    | Handles email routing                 |
+| TXT Record   | Stores text information               |
+| NS Record    | Identifies authoritative name servers |
+
+---
+
+# Features of DNS
+
+DNS provides several important features in internet communication.
+
+## Features
+
+* Converts domain names to IP addresses
+* Supports fast internet navigation
+* Distributed database system
+* Scalable and reliable
+* Supports email routing and web services
+
+---
+
+# Advantages of DNS
+
+DNS offers many benefits to internet users and organizations.
+
+## Advantages
+
+### 1. Easy Website Access
+
+Users can remember domain names instead of IP addresses.
+
+### 2. Faster Communication
+
+DNS speeds up internet resource access.
+
+### 3. Improved Network Management
+
+Organizations can manage domains efficiently.
+
+### 4. Supports Large Internet Infrastructure
+
+DNS helps organize billions of internet resources.
+
+### 5. Flexible and Scalable
+
+DNS can support growing internet systems worldwide.
+
+---
+
+# Disadvantages of DNS
+
+Despite its importance, DNS also has some limitations.
+
+## Disadvantages
+
+* Vulnerable to cyber attacks
+* DNS server failures can disrupt internet access
+* Incorrect DNS records may cause connection issues
+* DNS propagation may take time
+
+---
+
+# DNS Security
+
+Because DNS is essential to internet communication, security measures are important.
+
+## Common DNS Threats
+
+* DNS spoofing
+* DNS cache poisoning
+* Distributed Denial of Service (DDoS) attacks
+
+## Security Measures
+
+* DNSSEC (DNS Security Extensions)
+* Firewalls
+* Secure DNS servers
+* Network monitoring
+
+---
+
+# Importance of DNS
+
+DNS is a critical part of internet infrastructure because it enables users to access websites easily and efficiently. Without DNS, users would need to memorize numerical IP addresses for every website.
+
+Businesses, governments, schools, and online services depend heavily on DNS for internet communication and digital operations.
+
+---
+
+# Applications of DNS
+
+DNS is used in many internet services.
+
+## Applications
+
+* Website access
+* Email delivery
+* Cloud computing
+* Online applications
+* Network management
+* Internet communication systems
+
+---
+
+# Conclusion
+
+The Domain Name System (DNS) is a fundamental internet technology that translates domain names into IP addresses. It simplifies internet navigation and supports communication across the World Wide Web. DNS remains an essential component of modern networking and internet infrastructure.
+
 </body>
 </html>

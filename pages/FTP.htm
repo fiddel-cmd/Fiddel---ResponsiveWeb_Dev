@@ -1,23 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>FTP - File Transfer Protocol</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-	<h1>File Transfer Protocol (FTP)</h1>
+    # File Transfer Protocol (FTP)
 
-	<h2>Introduction</h2>
-	<p>FTP is a standard network protocol used to transfer files between a client and a server. It has been widely used for publishing and retrieving files from remote systems.</p>
+## Introduction
 
-	<h2>How FTP Works</h2>
-	<p>FTP uses separate control and data connections. Traditional FTP is not encrypted; secure variants like FTPS and SFTP provide encryption and improved security.</p>
+File Transfer Protocol (FTP) is a standard network protocol used for transferring files between computers over a network or the internet. It allows users to upload, download, manage, and share files between a client computer and a server.
 
-	<h2>Use Cases</h2>
-	<p>Uploading website files, sharing large files, and automated backups are common FTP use cases. Prefer secure alternatives for sensitive data.</p>
+FTP is commonly used in website management, file sharing, software distribution, and server administration.
 
-	<h2>Conclusion</h2>
-	<p>FTP remains useful for simple file transfers, but consider secure methods when privacy and integrity are required.</p>
+---
+
+# How FTP Works
+
+FTP works using a client-server model of communication.
+
+## Steps in FTP Communication
+
+1. The user opens an FTP client application.
+2. The client connects to an FTP server using an IP address or domain name.
+3. The user enters login credentials such as username and password.
+4. The client and server establish a connection.
+5. Files can then be uploaded, downloaded, renamed, deleted, or moved.
+
+FTP uses TCP for reliable data transmission.
+
+---
+
+# Components of FTP
+
+FTP communication involves two main components.
+
+## 1. FTP Client
+
+The FTP client is the software used by the user to connect to the FTP server.
+
+### Examples of FTP Clients
+
+* FileZilla
+* WinSCP
+* Cyberduck
+
+---
+
+## 2. FTP Server
+
+The FTP server stores files and manages file transfer requests from clients.
+
+The server controls:
+
+* User authentication
+* File access permissions
+* Upload and download operations
+
+---
+
+# Types of FTP Connections
+
+FTP can operate in different connection modes.
+
+## 1. Active Mode
+
+In active mode, the server initiates the data connection to the client.
+
+---
+
+## 2. Passive Mode
+
+In passive mode, the client initiates both the control and data connections.
+
+Passive mode is more commonly used because it works better with firewalls and routers.
+
+---
+
+# Features of FTP
+
+FTP provides several important features in file management and transfer.
+
+## Features
+
+* Uploading and downloading files
+* Remote file management
+* User authentication
+* Directory navigation
+* Large file transfer support
+* Reliable communication using TCP
+
+---
+
+# Advantages of FTP
+
+FTP offers many benefits in network communication and file sharing.
+
+## Advantages
+
+### 1. Fast File Transfer
+
+FTP supports efficient transfer of large files.
+
+### 2. Remote Access
+
+Users can access files stored on remote servers.
+
+### 3. Easy File Management
+
+Files can be uploaded, deleted, renamed, or moved remotely.
+
+### 4. Supports Large Data Transfers
+
+FTP handles large amounts of data effectively.
+
+### 5. Reliable Transmission
+
+Uses TCP to ensure accurate file delivery.
+
+---
+
+# Disadvantages of FTP
+
+Despite its usefulness, FTP also has limitations.
+
+## Disadvantages
+
+* Traditional FTP is not encrypted
+* Vulnerable to hacking and interception
+* Requires internet connectivity
+* Complex configuration in some networks
+
+---
+
+# Secure Versions of FTP
+
+Because standard FTP lacks security, secure alternatives were developed.
+
+## FTPS
+
+FTPS adds SSL/TLS encryption to secure data transmission.
+
+---
+
+## SFTP
+
+SFTP stands for Secure File Transfer Protocol and uses SSH for secure communication.
+
+SFTP is more secure and commonly used in modern systems.
+
+---
+
+# Applications of FTP
+
+FTP is widely used in different industries and computing environments.
+
+## Applications
+
+* Website file uploads
+* Server administration
+* Software distribution
+* Backup systems
+* File sharing in organizations
+* Cloud and hosting services
+
+---
+
+# Difference Between FTP and HTTP
+
+| FTP                                   | HTTP                         |
+| ------------------------------------- | ---------------------------- |
+| Used for file transfer                | Used for web communication   |
+| Supports upload and download          | Mainly retrieves web content |
+| Requires authentication in most cases | May not require login        |
+| Uses dedicated FTP software           | Uses web browsers            |
+
+---
+
+# Importance of FTP
+
+FTP remains an important protocol in networking and server management. Web developers, businesses, and system administrators use FTP to manage files and maintain websites efficiently.
+
+Even though modern cloud technologies exist, FTP still plays a major role in secure file transfer and remote file management.
+
+---
+
+# Conclusion
+
+File Transfer Protocol (FTP) is a network protocol used for transferring files between computers over a network. It provides reliable file transfer, remote access, and file management capabilities. Although traditional FTP has security limitations, secure versions such as FTPS and SFTP continue to make FTP an important technology in modern networking and web development.
+
+    
 </body>
 </html>
