@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DNS - Domain Name System</title>
+</head>
+<body>
+	<h1>Domain Name System (DNS)</h1>
+
+	<h2>Introduction</h2>
+	<p>The Domain Name System (DNS) translates human-friendly domain names (like example.com) into IP addresses that computers use to identify each other on the network. DNS is a foundational internet service that makes the web easy to use.</p>
+
+	<h2>How DNS Works</h2>
+	<p>When you enter a URL in a browser, the system queries a DNS resolver which looks up the domain's authoritative name server and returns the corresponding IP address. The browser then connects to that IP address to request the web page.</p>
+
+	<h3>Key DNS components</h3>
+	<ul>
+		<li>Recursive resolver (usually provided by ISP or public DNS)</li>
+		<li>Root name servers</li>
+		<li>TLD (Top-Level Domain) name servers</li>
+		<li>Authoritative name servers (for the domain)</li>
+	</ul>
+
+	<h2>Common DNS Record Types</h2>
+	<ul>
+		<li><strong>A</strong>: maps a hostname to an IPv4 address</li>
+		<li><strong>AAAA</strong>: maps a hostname to an IPv6 address</li>
+		<li><strong>CNAME</strong>: alias of one name to another</li>
+		<li><strong>MX</strong>: mail exchange records for email routing</li>
+		<li><strong>TXT</strong>: arbitrary text (often used for verification)</li>
+	</ul>
+
+	<h2>Importance and Best Practices</h2>
+	<p>Reliable DNS is essential for uptime and performance. Use reputable DNS providers, configure TTLs appropriately, and secure DNS with DNSSEC where possible to prevent spoofing.</p>
+
+	<h2>Conclusion</h2>
+	<p>DNS quietly makes the web usable. Understanding DNS basics helps when troubleshooting connectivity, setting up services, or improving reliability.</p>
+</body>
+</html>
