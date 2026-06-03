@@ -6,188 +6,245 @@
     <title>Document</title>
 </head>
 <body>
-    # HyperText Transfer Protocol (HTTP)
-
-## Introduction
-
-HyperText Transfer Protocol (HTTP) is the communication protocol used for transferring data over the World Wide Web. It enables communication between web browsers and web servers so that users can access websites and online resources.
-
-Whenever a user visits a website, HTTP is used to send requests from the browser to the server and return responses from the server back to the browser.
-
-HTTP is one of the core technologies of the internet and forms the foundation of web communication.
-
----
-
-# How HTTP Works
-
-HTTP follows a client-server model of communication.
-
-## Steps in HTTP Communication
-
-1. A user enters a website URL in a web browser.
-2. The browser sends an HTTP request to the web server.
-3. The web server processes the request.
-4. The server sends an HTTP response back to the browser.
-5. The browser displays the webpage content to the user.
-
-This process happens very quickly and allows users to browse websites smoothly.
-
----
-
-# Components of HTTP
-
-HTTP communication consists of several important components.
-
-## 1. HTTP Request
-
-An HTTP request is sent by the client (browser) to request a resource from the server.
-
-### Common Request Methods
-
-| Method | Purpose                   |
-| ------ | ------------------------- |
-| GET    | Retrieve data from server |
-| POST   | Send data to server       |
-| PUT    | Update existing data      |
-| DELETE | Remove data               |
-
----
-
-## 2. HTTP Response
-
-The HTTP response is the message returned by the server after processing a request.
-
-The response includes:
-
-* Status code
-* Requested data
-* Headers
-* Content type
-
----
-
-## 3. HTTP Headers
-
-Headers contain additional information about the request or response.
-
-Examples include:
-
-* Content type
-* Browser information
-* Server details
-* Authorization data
-
----
-
-# HTTP Status Codes
-
-HTTP status codes indicate the result of a request.
-
-## Common Status Codes
-
-| Status Code | Meaning               |
-| ----------- | --------------------- |
-| 200         | Request successful    |
-| 404         | Page not found        |
-| 500         | Internal server error |
-| 403         | Access forbidden      |
-| 301         | Permanent redirection |
-
----
-
-# HTTP vs HTTPS
-
-HTTP is often compared with HTTPS.
-
-| HTTP                  | HTTPS                                   |
-| --------------------- | --------------------------------------- |
-| Data is not encrypted | Data is encrypted                       |
-| Less secure           | More secure                             |
-| Uses port 80          | Uses port 443                           |
-| Vulnerable to attacks | Better protection against cyber threats |
-
-HTTPS is the secure version of HTTP and uses SSL/TLS encryption to protect transmitted data.
-
----
-
-# Features of HTTP
-
-HTTP provides several features that support web communication.
-
-## Features
-
-* Simple communication protocol
-* Fast data transfer
-* Flexible and extensible
-* Supports multimedia transmission
-* Works with different platforms and browsers
-
----
-
-# Advantages of HTTP
-
-HTTP offers many benefits in internet communication.
-
-## Advantages
-
-### 1. Easy Communication
-
-HTTP allows easy communication between clients and servers.
-
-### 2. Fast Data Transfer
-
-It supports efficient transmission of web resources.
-
-### 3. Platform Independent
-
-HTTP works across different devices and operating systems.
-
-### 4. Supports Multimedia
-
-It can transfer text, images, videos, and audio files.
-
----
-
-# Disadvantages of HTTP
-
-Despite its usefulness, HTTP also has limitations.
-
-## Disadvantages
-
-* Data is transmitted in plain text
-* Vulnerable to hacking and interception
-* No built-in encryption
-* Less secure than HTTPS
-
----
-
-# Importance of HTTP
-
-HTTP is essential for accessing websites and online services. It enables communication across the internet and supports web browsing, online applications, and digital communication.
-
-Without HTTP, the World Wide Web would not function properly.
-
----
-
-# Applications of HTTP
-
-HTTP is widely used in many internet services.
-
-## Applications
-
-* Website browsing
-* Web applications
-* Online APIs
-* E-commerce platforms
-* Cloud services
-* Mobile applications
-
----
-
-# Conclusion
-
-HyperText Transfer Protocol (HTTP) is a fundamental internet protocol that enables communication between web browsers and web servers. It plays a critical role in accessing websites and transferring online data. Although HTTP is simple and efficient, modern systems prefer HTTPS because of its improved security and encryption features.
-
-    
+    <main>
+        <h1>HyperText Transfer Protocol (HTTP)</h1>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>HyperText Transfer Protocol (HTTP) is the communication protocol used for transferring data over the World Wide Web. It enables communication between web browsers and web servers so that users can access websites and online resources.</p>
+            <p>Whenever a user visits a website, HTTP is used to send requests from the browser to the server and return responses from the server back to the browser.</p>
+            <p>HTTP is one of the core technologies of the internet and forms the foundation of web communication.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>How HTTP Works</h2>
+            <p>HTTP follows a client-server model of communication.</p>
+            <h3>Steps in HTTP Communication</h3>
+            <ol>
+                <li>A user enters a website URL in a web browser.</li>
+                <li>The browser sends an HTTP request to the web server.</li>
+                <li>The web server processes the request.</li>
+                <li>The server sends an HTTP response back to the browser.</li>
+                <li>The browser displays the webpage content to the user.</li>
+            </ol>
+            <p>This process happens very quickly and allows users to browse websites smoothly.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Components of HTTP</h2>
+            <p>HTTP communication consists of several important components.</p>
+            <article>
+                <h3>1. HTTP Request</h3>
+                <p>An HTTP request is sent by the client (browser) to request a resource from the server.</p>
+                <h4>Common Request Methods</h4>
+                <table border="1">
+                    <caption>Common HTTP Request Methods</caption>
+                    <thead>
+                        <tr>
+                            <th>Method</th>
+                            <th>Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GET</td>
+                            <td>Retrieve data from server</td>
+                        </tr>
+                        <tr>
+                            <td>POST</td>
+                            <td>Send data to server</td>
+                        </tr>
+                        <tr>
+                            <td>PUT</td>
+                            <td>Update existing data</td>
+                        </tr>
+                        <tr>
+                            <td>DELETE</td>
+                            <td>Remove data</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article>
+                <h3>2. HTTP Response</h3>
+                <p>The HTTP response is the message returned by the server after processing a request.</p>
+                <p>The response includes:</p>
+                <ul>
+                    <li>Status code</li>
+                    <li>Requested data</li>
+                    <li>Headers</li>
+                    <li>Content type</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>3. HTTP Headers</h3>
+                <p>Headers contain additional information about the request or response.</p>
+                <p>Examples include:</p>
+                <ul>
+                    <li>Content type</li>
+                    <li>Browser information</li>
+                    <li>Server details</li>
+                    <li>Authorization data</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>HTTP Status Codes</h2>
+            <p>HTTP status codes indicate the result of a request.</p>
+            <h3>Common Status Codes</h3>
+            <table border="1">
+                <caption>Common HTTP Status Codes</caption>
+                <thead>
+                    <tr>
+                        <th>Status Code</th>
+                        <th>Meaning</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>200</td>
+                        <td>Request successful</td>
+                    </tr>
+                    <tr>
+                        <td>404</td>
+                        <td>Page not found</td>
+                    </tr>
+                    <tr>
+                        <td>500</td>
+                        <td>Internal server error</td>
+                    </tr>
+                    <tr>
+                        <td>403</td>
+                        <td>Access forbidden</td>
+                    </tr>
+                    <tr>
+                        <td>301</td>
+                        <td>Permanent redirection</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>HTTP vs HTTPS</h2>
+            <p>HTTP is often compared with HTTPS.</p>
+            <table border="1">
+                <caption>HTTP vs HTTPS Comparison</caption>
+                <thead>
+                    <tr>
+                        <th>HTTP</th>
+                        <th>HTTPS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Data is not encrypted</td>
+                        <td>Data is encrypted</td>
+                    </tr>
+                    <tr>
+                        <td>Less secure</td>
+                        <td>More secure</td>
+                    </tr>
+                    <tr>
+                        <td>Uses port 80</td>
+                        <td>Uses port 443</td>
+                    </tr>
+                    <tr>
+                        <td>Vulnerable to attacks</td>
+                        <td>Better protection against cyber threats</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>HTTPS is the secure version of HTTP and uses SSL/TLS encryption to protect transmitted data.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Features of HTTP</h2>
+            <p>HTTP provides several features that support web communication.</p>
+            <ul>
+                <li>Simple communication protocol</li>
+                <li>Fast data transfer</li>
+                <li>Flexible and extensible</li>
+                <li>Supports multimedia transmission</li>
+                <li>Works with different platforms and browsers</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Advantages of HTTP</h2>
+            <article>
+                <h3>1. Easy Communication</h3>
+                <p>HTTP allows easy communication between clients and servers.</p>
+            </article>
+            <article>
+                <h3>2. Fast Data Transfer</h3>
+                <p>It supports efficient transmission of web resources.</p>
+            </article>
+            <article>
+                <h3>3. Platform Independent</h3>
+                <p>HTTP works across different devices and operating systems.</p>
+            </article>
+            <article>
+                <h3>4. Supports Multimedia</h3>
+                <p>It can transfer text, images, videos, and audio files.</p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Disadvantages of HTTP</h2>
+            <ul>
+                <li>Data is transmitted in plain text</li>
+                <li>Vulnerable to hacking and interception</li>
+                <li>No built-in encryption</li>
+                <li>Less secure than HTTPS</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Importance of HTTP</h2>
+            <p>HTTP is essential for accessing websites and online services. It enables communication across the internet and supports web browsing, online applications, and digital communication.</p>
+            <p>Without HTTP, the World Wide Web would not function properly.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Applications of HTTP</h2>
+            <ul>
+                <li>Website browsing</li>
+                <li>Web applications</li>
+                <li>Online APIs</li>
+                <li>E-commerce platforms</li>
+                <li>Cloud services</li>
+                <li>Mobile applications</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Conclusion</h2>
+            <p>HyperText Transfer Protocol (HTTP) is a fundamental internet protocol that enables communication between web browsers and web servers. It plays a critical role in accessing websites and transferring online data. Although HTTP is simple and efficient, modern systems prefer HTTPS because of its improved security and encryption features.</p>
+        </section>
+    </main>
 </body>
 </html>
