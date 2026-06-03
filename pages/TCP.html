@@ -1,148 +1,173 @@
-# Transmission Control Protocol (TCP)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transmission Control Protocol (TCP)</title>
+</head>
+<body>
+    <main>
+        <h1>Transmission Control Protocol (TCP)</h1>
 
-## Introduction
+        <section>
+            <h2>Introduction</h2>
+            <p>Transmission Control Protocol (TCP) is one of the core communication protocols used on the internet and computer networks. It is responsible for ensuring that data is transmitted accurately, reliably, and in the correct order between devices connected to a network.</p>
+            <p>TCP works together with the Internet Protocol (IP) to form the TCP/IP model, which is the foundation of modern internet communication.</p>
+        </section>
 
-Transmission Control Protocol (TCP) is one of the core communication protocols used on the internet and computer networks. It is responsible for ensuring that data is transmitted accurately, reliably, and in the correct order between devices connected to a network.
+        <hr>
 
-TCP works together with the Internet Protocol (IP) to form the TCP/IP model, which is the foundation of modern internet communication.
+        <section>
+            <h2>How TCP Works</h2>
+            <p>TCP establishes a connection between two devices before data transmission begins. It breaks large amounts of data into smaller units called packets and ensures that all packets reach their destination correctly.</p>
+            <p>The process involves:</p>
+            <ol>
+                <li>Establishing a connection between sender and receiver</li>
+                <li>Breaking data into packets</li>
+                <li>Sending packets across the network</li>
+                <li>Checking for errors during transmission</li>
+                <li>Reassembling packets in the correct order</li>
+                <li>Confirming successful delivery</li>
+            </ol>
+            <p>If any packet is lost during transmission, TCP requests it to be sent again.</p>
+        </section>
 
----
+        <hr>
 
-# How TCP Works
+        <section>
+            <h2>Features of TCP</h2>
+            <article>
+                <h3>1. Reliable Data Transmission</h3>
+                <p>TCP ensures that data reaches its destination without loss or corruption.</p>
+            </article>
+            <article>
+                <h3>2. Error Detection</h3>
+                <p>TCP detects errors in transmitted packets and requests retransmission if necessary.</p>
+            </article>
+            <article>
+                <h3>3. Flow Control</h3>
+                <p>TCP controls the speed of data transfer to prevent network congestion and receiver overload.</p>
+            </article>
+            <article>
+                <h3>4. Ordered Delivery</h3>
+                <p>TCP ensures packets are arranged in the correct sequence before delivery to the application.</p>
+            </article>
+            <article>
+                <h3>5. Connection-Oriented Communication</h3>
+                <p>TCP establishes a connection between devices before data exchange begins.</p>
+            </article>
+        </section>
 
-TCP establishes a connection between two devices before data transmission begins. It breaks large amounts of data into smaller units called packets and ensures that all packets reach their destination correctly.
+        <hr>
 
-The process involves:
+        <section>
+            <h2>TCP Three-Way Handshake</h2>
+            <p>Before communication starts, TCP uses a process called the Three-Way Handshake to establish a secure connection.</p>
+            <h3>Steps in the Three-Way Handshake</h3>
+            <article>
+                <h4>Step 1: SYN</h4>
+                <p>The client sends a synchronization request (SYN) to the server.</p>
+            </article>
+            <article>
+                <h4>Step 2: SYN-ACK</h4>
+                <p>The server responds with a synchronization acknowledgment (SYN-ACK).</p>
+            </article>
+            <article>
+                <h4>Step 3: ACK</h4>
+                <p>The client sends an acknowledgment (ACK), and the connection is established.</p>
+            </article>
+            <p>This process ensures both devices are ready for communication.</p>
+        </section>
 
-1. Establishing a connection between sender and receiver
-2. Breaking data into packets
-3. Sending packets across the network
-4. Checking for errors during transmission
-5. Reassembling packets in the correct order
-6. Confirming successful delivery
+        <hr>
 
-If any packet is lost during transmission, TCP requests it to be sent again.
+        <section>
+            <h2>Applications That Use TCP</h2>
+            <p>Many internet applications rely on TCP because of its reliability.</p>
+            <ul>
+                <li>Web browsing (HTTP and HTTPS)</li>
+                <li>Email services</li>
+                <li>File transfer protocols (FTP)</li>
+                <li>Remote login services</li>
+                <li>Online banking systems</li>
+            </ul>
+        </section>
 
----
+        <hr>
 
-# Features of TCP
+        <section>
+            <h2>Advantages of TCP</h2>
+            <p>TCP offers several benefits in network communication.</p>
+            <ul>
+                <li>Reliable data delivery</li>
+                <li>Error checking and correction</li>
+                <li>Secure and stable communication</li>
+                <li>Proper packet sequencing</li>
+                <li>Efficient flow control</li>
+            </ul>
+        </section>
 
-TCP provides several important features that make internet communication reliable.
+        <hr>
 
-## 1. Reliable Data Transmission
+        <section>
+            <h2>Disadvantages of TCP</h2>
+            <p>Despite its reliability, TCP also has some limitations.</p>
+            <ul>
+                <li>Slower than UDP due to error checking</li>
+                <li>Requires more bandwidth and resources</li>
+                <li>Higher communication overhead</li>
+                <li>Less suitable for real-time applications</li>
+            </ul>
+        </section>
 
-TCP ensures that data reaches its destination without loss or corruption.
+        <hr>
 
----
+        <section>
+            <h2>Difference Between TCP and UDP</h2>
+            <p>TCP is often compared with User Datagram Protocol (UDP).</p>
+            <table border="1">
+                <caption>TCP vs UDP Comparison</caption>
+                <thead>
+                    <tr>
+                        <th>TCP</th>
+                        <th>UDP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Connection-oriented</td>
+                        <td>Connectionless</td>
+                    </tr>
+                    <tr>
+                        <td>Reliable communication</td>
+                        <td>Faster but less reliable</td>
+                    </tr>
+                    <tr>
+                        <td>Error checking included</td>
+                        <td>Minimal error checking</td>
+                    </tr>
+                    <tr>
+                        <td>Used for important data</td>
+                        <td>Used for streaming and gaming</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-## 2. Error Detection
+        <hr>
 
-TCP detects errors in transmitted packets and requests retransmission if necessary.
+        <section>
+            <h2>Importance of TCP</h2>
+            <p>TCP is essential in modern networking because it guarantees accurate and reliable communication over the internet. Businesses, websites, financial institutions, and communication systems depend on TCP to ensure safe and stable data transfer.</p>
+            <p>Without TCP, internet communication would be unreliable and inconsistent.</p>
+        </section>
 
----
+        <hr>
 
-## 3. Flow Control
-
-TCP controls the speed of data transfer to prevent network congestion and receiver overload.
-
----
-
-## 4. Ordered Delivery
-
-TCP ensures packets are arranged in the correct sequence before delivery to the application.
-
----
-
-## 5. Connection-Oriented Communication
-
-TCP establishes a connection between devices before data exchange begins.
-
----
-
-# TCP Three-Way Handshake
-
-Before communication starts, TCP uses a process called the Three-Way Handshake to establish a secure connection.
-
-## Steps in the Three-Way Handshake
-
-### Step 1: SYN
-
-The client sends a synchronization request (SYN) to the server.
-
-### Step 2: SYN-ACK
-
-The server responds with a synchronization acknowledgment (SYN-ACK).
-
-### Step 3: ACK
-
-The client sends an acknowledgment (ACK), and the connection is established.
-
-This process ensures both devices are ready for communication.
-
----
-
-# Applications That Use TCP
-
-Many internet applications rely on TCP because of its reliability.
-
-## Examples
-
-* Web browsing (HTTP and HTTPS)
-* Email services
-* File transfer protocols (FTP)
-* Remote login services
-* Online banking systems
-
----
-
-# Advantages of TCP
-
-TCP offers several benefits in network communication.
-
-## Advantages
-
-* Reliable data delivery
-* Error checking and correction
-* Secure and stable communication
-* Proper packet sequencing
-* Efficient flow control
-
----
-
-# Disadvantages of TCP
-
-Despite its reliability, TCP also has some limitations.
-
-## Disadvantages
-
-* Slower than UDP due to error checking
-* Requires more bandwidth and resources
-* Higher communication overhead
-* Less suitable for real-time applications
-
----
-
-# Difference Between TCP and UDP
-
-TCP is often compared with User Datagram Protocol (UDP).
-
-| TCP                     | UDP                           |
-| ----------------------- | ----------------------------- |
-| Connection-oriented     | Connectionless                |
-| Reliable communication  | Faster but less reliable      |
-| Error checking included | Minimal error checking        |
-| Used for important data | Used for streaming and gaming |
-
----
-
-# Importance of TCP
-
-TCP is essential in modern networking because it guarantees accurate and reliable communication over the internet. Businesses, websites, financial institutions, and communication systems depend on TCP to ensure safe and stable data transfer.
-
-Without TCP, internet communication would be unreliable and inconsistent.
-
----
-
-# Conclusion
-
-Transmission Control Protocol (TCP) is a fundamental networking protocol that enables reliable communication between devices on the internet. It ensures accurate data delivery, manages errors, and maintains stable network connections. TCP remains one of the most important technologies in computer networking and internet communication.
+        <section>
+            <h2>Conclusion</h2>
+            <p>Transmission Control Protocol (TCP) is a fundamental networking protocol that enables reliable communication between devices on the internet. It ensures accurate data delivery, manages errors, and maintains stable network connections. TCP remains one of the most important technologies in computer networking and internet communication.</p>
+        </section>
+    </main>
+</body>
+</html>
