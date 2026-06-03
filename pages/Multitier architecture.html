@@ -4,184 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylepages.css">
 </head>
 <body>
-    # Multitier Architecture
-
-## Introduction
-
-Multitier architecture is a software and system design approach where an application is divided into multiple layers or tiers. Each tier performs a specific function and communicates with other tiers to process data and provide services to users.
-
-This architecture is widely used in web applications, enterprise systems, banking systems, cloud computing, and modern software development because it improves organization, scalability, security, and maintainability.
-
----
-
-# Meaning of Tiers
-
-A tier refers to a separate layer or component within a system architecture. Each tier is responsible for handling a particular task in the application.
-
-The most common multitier architecture is the Three-Tier Architecture, which consists of:
-
-1. Presentation Tier
-2. Application Tier
-3. Data Tier
-
----
-
-# Types of Tiers in Multitier Architecture
-
-## 1. Presentation Tier
-
-The presentation tier is the user interface layer where users interact with the system. It displays information and collects input from users.
-
-Examples include:
-
-* Web pages
-* Mobile application interfaces
-* Desktop application interfaces
-
-### Functions of the Presentation Tier
-
-* Displays information to users
-* Accepts user input
-* Sends requests to the application tier
-* Provides user interaction
-
----
-
-## 2. Application Tier
-
-The application tier is also known as the business logic layer. It processes user requests, performs calculations, applies business rules, and controls communication between the presentation tier and the database.
-
-### Functions of the Application Tier
-
-* Processes user requests
-* Performs business operations
-* Validates data
-* Handles communication between layers
-
-### Examples
-
-* Authentication systems
-* Payment processing
-* Data analysis operations
-
----
-
-## 3. Data Tier
-
-The data tier is responsible for storing, retrieving, and managing data within the system.
-
-Examples include:
-
-* MySQL databases
-* Oracle databases
-* PostgreSQL databases
-
-### Functions of the Data Tier
-
-* Stores application data
-* Retrieves requested information
-* Manages database security
-* Performs backup and recovery
-
----
-
-# How Multitier Architecture Works
-
-The multitier architecture works through communication between layers.
-
-1. The user interacts with the presentation tier.
-2. The presentation tier sends requests to the application tier.
-3. The application tier processes the request.
-4. The application tier communicates with the data tier if data is required.
-5. The database returns the requested information.
-6. The application tier processes the response.
-7. The presentation tier displays the final output to the user.
-
-This separation improves efficiency and system organization.
-
----
-
-# Advantages of Multitier Architecture
-
-Multitier architecture provides many benefits in software development.
-
-## Advantages
-
-### 1. Scalability
-
-Each tier can be upgraded independently without affecting the entire system.
-
-### 2. Improved Security
-
-Sensitive data can be protected within the data tier.
-
-### 3. Easier Maintenance
-
-Developers can modify one layer without changing the whole application.
-
-### 4. Better Performance
-
-Tasks are distributed across different servers and layers.
-
-### 5. Reusability
-
-Components and services can be reused in different applications.
-
----
-
-# Disadvantages of Multitier Architecture
-
-Despite its advantages, multitier architecture also has some challenges.
-
-## Disadvantages
-
-* More complex to design
-* Higher development cost
-* Requires skilled developers
-* Increased network communication between tiers
-* Troubleshooting can become difficult
-
----
-
-# Applications of Multitier Architecture
-
-Multitier architecture is used in many modern systems.
-
-## Examples
-
-* Banking systems
-* E-commerce websites
-* Online learning platforms
-* Hospital management systems
-* Cloud computing platforms
-* Enterprise applications
-
----
-
-# Difference Between Two-Tier and Three-Tier Architecture
-
-| Two-Tier Architecture                      | Three-Tier Architecture                        |
-| ------------------------------------------ | ---------------------------------------------- |
-| Client communicates directly with database | Client communicates through application server |
-| Simpler structure                          | More secure and scalable                       |
-| Suitable for small systems                 | Suitable for large systems                     |
-| Less secure                                | Better security management                     |
-
----
-
-# Importance of Multitier Architecture
-
-Multitier architecture is important because it helps developers build secure, scalable, and efficient applications. It improves system performance and simplifies maintenance in modern software systems.
-
-Large organizations and modern internet applications rely heavily on multitier architecture for reliable service delivery.
-
----
-
-# Conclusion
-
-Multitier architecture is a powerful software design model that separates applications into multiple layers with different responsibilities. It improves security, scalability, maintainability, and system organization. As technology continues to advance, multitier architecture remains a key foundation in modern software and web application development.
-
+    <h1>Multitier Architecture</h1>
+
+    <section>
+        <h2>Introduction</h2>
+        <p>Multitier architecture is a software and system design approach where an application is divided into multiple layers or tiers. Each tier performs a specific function and communicates with other tiers to process data and provide services to users.</p>
+        <p>This architecture is widely used in web applications, enterprise systems, banking systems, cloud computing, and modern software development because it improves organization, scalability, security, and maintainability.</p>
+    </section>
+
+    <section>
+        <h2>Meaning of Tiers</h2>
+        <p>A tier refers to a separate layer or component within a system architecture. Each tier is responsible for handling a particular task in the application.</p>
+        <p>The most common multitier architecture is the Three-Tier Architecture, which consists of:</p>
+        <ul>
+            <li>Presentation Tier</li>
+            <li>Application Tier</li>
+            <li>Data Tier</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Types of Tiers in Multitier Architecture</h2>
+
+        <article>
+            <h3>1. Presentation Tier</h3>
+            <p>The presentation tier is the user interface layer where users interact with the system. It displays information and collects input from users.</p>
+            <p>Examples include:</p>
+            <ul>
+                <li>Web pages</li>
+                <li>Mobile application interfaces</li>
+                <li>Desktop application interfaces</li>
+            </ul>
+            <h4>Functions of the Presentation Tier</h4>
+            <ul>
+                <li>Provides the user interface</li>
+                <li>Accepts user input</li>
+                <li>Sends requests to the application tier</li>
+                <li>Enables user interaction</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>2. Application Tier</h3>
+            <p>The application tier is also known as the business logic layer. It processes user requests, performs calculations, applies business rules, and controls communication between the presentation tier and the database.</p>
+            <h4>Functions of the Application Tier</h4>
+            <ul>
+                <li>Processes user requests</li>
+                <li>Performs business operations</li>
+                <li>Validates data</li>
+                <li>Handles communication between layers</li>
+            </ul>
+            <h5>Examples</h5>
+            <ul>
+                <li>Authentication systems</li>
+                <li>Payment processing</li>
+                <li>Data analysis operations</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>3. Data Tier</h3>
+            <p>The data tier is responsible for storing, retrieving, and managing data within the system.</p>
+            <p>Examples include:</p>
+            <ul>
+                <li>MySQL databases</li>
+                <li>Oracle databases</li>
+                <li>PostgreSQL databases</li>
+            </ul>
+            <h4>Functions of the Data Tier</h4>
+            <ul>
+                <li>Stores application data</li>
+                <li>Retrieves requested information</li>
+                <li>Manages database security</li>
+                <li>Performs backup and recovery</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <h2>How Multitier Architecture Works</h2>
+        <p>The multitier architecture works through communication between layers.</p>
+        <ol>
+            <li>The user interacts with the presentation tier.</li>
+            <li>The presentation tier sends requests to the application tier.</li>
+            <li>The application tier processes the request.</li>
+            <li>The application tier communicates with the data tier if data is required.</li>
+            <li>The database returns the requested information.</li>
+            <li>The application tier processes the response.</li>
+            <li>The presentation tier displays the final output to the user.</li>
+        </ol>
+        <p>This separation improves efficiency and system organization.</p>
+    </section>
+
+    <section>
+        <h2>Advantages of Multitier Architecture</h2>
+        <p>Multitier architecture provides many benefits in software development.</p>
+        <h3>1. Scalability</h3>
+        <p>Each tier can be upgraded independently without affecting the entire system.</p>
+        <h3>2. Improved Security</h3>
+        <p>Sensitive data can be protected within the data tier.</p>
+        <h3>3. Easier Maintenance</h3>
+        <p>Developers can modify one layer without changing the whole application.</p>
+        <h3>4. Better Performance</h3>
+        <p>Tasks are distributed across different servers and layers.</p>
+        <h3>5. Reusability</h3>
+        <p>Components and services can be reused in different applications.</p>
+    </section>
+
+    <section>
+        <h2>Disadvantages of Multitier Architecture</h2>
+        <p>Despite its advantages, multitier architecture also has some challenges.</p>
+        <ul>
+            <li>More complex to design</li>
+            <li>Higher development cost</li>
+            <li>Requires skilled developers</li>
+            <li>Increased network communication between tiers</li>
+            <li>Troubleshooting can become difficult</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Applications of Multitier Architecture</h2>
+        <p>Multitier architecture is used in many modern systems.</p>
+        <ul>
+            <li>Banking systems</li>
+            <li>E-commerce websites</li>
+            <li>Online learning platforms</li>
+            <li>Hospital management systems</li>
+            <li>Cloud computing platforms</li>
+            <li>Enterprise applications</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Difference Between Two-Tier and Three-Tier Architecture</h2>
+        <table border="1">
+            <caption>Comparison of Two-Tier and Three-Tier Architecture</caption>
+            <thead>
+                <tr>
+                    <th>Two-Tier Architecture</th>
+                    <th>Three-Tier Architecture</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Client communicates directly with database</td>
+                    <td>Client communicates through application server</td>
+                </tr>
+                <tr>
+                    <td>Simpler structure</td>
+                    <td>More secure and scalable</td>
+                </tr>
+                <tr>
+                    <td>Suitable for small systems</td>
+                    <td>Suitable for large systems</td>
+                </tr>
+                <tr>
+                    <td>Less secure</td>
+                    <td>Better security management</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Importance of Multitier Architecture</h2>
+        <p>Multitier architecture is important because it helps developers build secure, scalable, and efficient applications. It improves system performance and simplifies maintenance in modern software systems.</p>
+        <p>Large organizations and modern internet applications rely heavily on multitier architecture for reliable service delivery.</p>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+        <p>Multitier architecture is a powerful software design model that separates applications into multiple layers with different responsibilities. It improves security, scalability, maintainability, and system organization. As technology continues to advance, multitier architecture remains a key foundation in modern software and web application development.</p>
+    </section>
 </body>
 </html>
